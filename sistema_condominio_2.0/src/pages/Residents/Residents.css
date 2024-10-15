@@ -1,0 +1,86 @@
+.grid-residents{
+    margin-top: 2rem;
+}
+
+.grid-residents > h3{
+    margin-block: 1.5rem;
+    border-bottom: 1px solid #f3ecec;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-residents > h3 span{
+    background: #FF6600;
+    border-radius: 50%;
+    color: #FFF;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+.grid-residents .residents{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+ 
+.grid-residents .container-grid{
+    flex: 1 1 calc(33% - 20px);
+    background: rgb(222 222 222 / 20%);
+    padding: 1rem;
+}
+
+.grid-residents .container-grid p{
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.grid-residents .container-grid p svg{
+    font-size: 1.2rem;
+}
+ 
+.grid-residents .container-grid .line{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-residents .container-grid .image{
+    margin-right: 1rem;
+}
+
+.grid-residents .container-grid .image img{
+    width: 70px;
+    height: 70px;
+}
+
+.grid-residents .container-grid .image-sem-foto{
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-residents .container-grid .image-sem-foto h3{
+    font-size: 0.65rem;
+}
+
+.grid-residents .details span{
+    margin-block: 0.6rem;
+    display: inline-block;
+    cursor: pointer;
+    background: #eeeeee;
+    padding: 0.5rem;  
+    font-size: 0.75rem;
+    border-radius: 3px;  
+}
+
+.grid-residents .details span a{
+    color: #666;
+}
