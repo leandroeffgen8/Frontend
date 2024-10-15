@@ -1,0 +1,35 @@
+.content-grid.visitantes .container-flex-collumn{
+    background: none;
+    padding-inline: 0;
+}
+
+
+.content-grid.visitantes .morador{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0.8rem 1rem;
+    background: rgba(0, 0, 0, .05);
+    border-bottom: 1px solid #eaeaea;
+}
+
+.content-grid.visitantes .my-events .listVisitants{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.content-grid.visitantes .my-events .listVisitants:last-child{
+    border: 0;
+}
+
+.container-flex-collumn .dados{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-grid.visitantes span{
+    flex: 1 1 calc(25% - 20px);
+}

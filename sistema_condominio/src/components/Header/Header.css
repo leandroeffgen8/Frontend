@@ -1,0 +1,43 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 10px 9px 0px rgba(233,233,233, 0.5);
+    padding: 1em;
+}
+
+#nav h3{
+    margin: 0;
+}
+
+#search-form{
+    position: relative;
+    width: 20%;
+}
+
+#search-form svg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#nav-links{
+    display: flex;
+    align-items: center;
+}
+
+#nav-links li{
+    margin-right: 1rem;
+}
+
+#nav-links span{
+    cursor: pointer;
+    color: #333;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+#nav-links svg{
+    font-size: 1.5rem;
+}

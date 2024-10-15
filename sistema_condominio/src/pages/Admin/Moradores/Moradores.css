@@ -1,0 +1,60 @@
+.grid-moradores{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+ 
+.grid-moradores .container-grid{
+    flex: 1 1 calc(33% - 20px);
+    background: rgb(222 222 222 / 20%);
+    padding: 1rem;
+}
+.grid-moradores .container-grid p{
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.grid-moradores .container-grid p svg{
+    font-size: 1.2rem;
+}
+ 
+.grid-moradores .container-grid .line{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-moradores .container-grid .image{
+    margin-right: 1rem;
+}
+
+.grid-moradores .container-grid .image img{
+    width: 160px;
+    height: 160px;
+}
+
+.grid-moradores .container-grid .image-sem-foto{
+    width: 160px;
+    height: 160px;
+    background: #FFF;
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-moradores .details span{
+    margin-block: 0.6rem;
+    display: inline-block;
+    cursor: pointer;
+    background: #FF6600;
+    color: #FFF;
+    padding: 0.5rem;  
+    font-size: 0.75rem;
+    border-radius: 3px;  
+}
+
+.grid-moradores .details span a{
+    color: #FFF;
+}

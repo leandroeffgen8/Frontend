@@ -1,0 +1,9 @@
+.my-events{
+    border: 1px solid #eaeaea;
+}
+
+.my-events h3{
+    padding: 0.8rem 1rem;
+    background: rgba(0, 0, 0, .05);
+    border-bottom: 1px solid #eaeaea;
+}

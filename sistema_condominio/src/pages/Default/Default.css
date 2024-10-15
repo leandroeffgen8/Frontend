@@ -1,0 +1,148 @@
+.content-grid.default{
+    width: 100%;
+    padding: 1rem;
+    background-color: #f9f8f8;
+}
+
+.grid-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid-box div header{
+    padding: 0.8rem 1rem;
+    background: rgba(0,0,0,.05);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.grid-box .box-home{
+    background: #FFF;
+    border: 1px solid #eaeaea;
+}
+
+.mudalRecados {flex: 2 1 250px;}
+.assembleia {flex: 1 1 250px;}
+.proximosEventos{flex: 1 1 100%;}
+.manutencao{flex: 1 1 100%}
+
+.grid-box div h2{
+    color: #555;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.grid-box .list{
+    padding: 1rem;
+}
+
+.grid-box .list div{
+    margin-block: 0.5rem;
+}
+
+.box-assembleia > div{
+    display: flex;
+    padding: 1rem;
+    gap: 20px;
+}
+
+.box-assembleia > div .data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+
+.box-assembleia > div .data h3{
+    color: #FFF;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: rgba(255, 102, 0, 1);
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1.2rem;
+}
+
+.box-assembleia > div .data > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.box-assembleia > div .data .day{
+    font-size: 2rem;
+}
+
+.box-assembleia div p{
+    font-size: 1rem;
+}
+
+.proximosEventos div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 1rem;
+}
+
+.proximosEventos div div{
+    display: flex;
+    flex: 1 1 calc(25% - 40px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 1rem;
+    border: 1px solid #eaeaea;
+}
+
+.proximosEventos div div span{
+    font-size: .88rem;
+    margin: 0 0 0.2rem;
+}
+
+.proximosEventos div .date-events{
+    padding: 0;
+    border: 1px solid #eaeaea;
+    width: 100%;
+    border: none;
+}
+
+.proximosEventos div .date-events span{
+    font-size: 1.2rem;
+}
+
+.proximosEventos div .date-events h3{
+    font-size: 1rem;
+    background: rgba(255, 102, 0, 1);
+    color: #FFF;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.proximosEventos div .date-events span{
+    padding-block: 1rem;
+    margin: 0 auto;
+}
+
+.link-right{
+    text-align: right;
+    padding: 0 1rem 1rem;
+    display: block;
+    font-size: 0.86rem;
+}
+
+
+.link-right:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .proximosEventos div div{
+        flex: 1 1 calc(50%);
+    }
+}

@@ -1,0 +1,60 @@
+.boxVisitantes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container-flex-collumn{
+    flex: 1 1 calc(33% - 20px);
+    background-color: rgb(222 222 222 / 20%);
+    padding: 2rem;
+} 
+
+.container-flex-collumn h3{
+    color: #333;
+}
+
+.container-flex-collumn p{
+    color: #808080;
+    margin-block: 0.5rem;
+}
+
+.container-flex-collumn .center{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container-flex-collumn .line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-flex-collumn .line svg{
+    cursor: pointer;
+}
+
+.btns{
+    margin-top: 1rem;
+}
+
+.btns .btn-icons{
+    color: #333;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    font-size: 14px;
+}
+
+.btns .btn-icons.btn-save{
+    color: #FF6600;
+}
+
+.btns .btn-icons.btn-cancel{
+    color: #333;
+}
+
+.grid-title{
+    display: flex;
+    justify-content: space-between;
+}

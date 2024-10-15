@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 1rem;
+  font-family: 'Roboto', 'sans-serif';
+  color: #333;
+}
+
+.home-page{
+  background: url('./assets/img-background.jpg') no-repeat;
+  background-size: cover;   
+}
+
+.home-page:before{
+  content:'';
+  position: absolute;
+  top: 0;
+  background: rgba(255, 102, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+.active{
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+label{
+  color: #333;
+  font-size: 14px; 
+  margin-block: 1rem; 
+  display: inline-block;  
+}
+
+input,
+select,
+textarea{
+  background-color: #FFF;
+  box-shadow: -1px 2px 20px 0px rgba(102,102,102,0.2);
+  color: #333;
+  border-radius: 10px;
+  padding-inline: 1.5rem;
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 55px;
+  font-size: 14px;
+}
+
+textarea{
+  font-family: 'Roboto', 'sans-serif';
+}
+
+textarea::placeholder,
+input::placeholder{
+  color: #333;
+}
+
+.btn,
+button,
+input[type="submit"]{
+  background: #EA731F;
+  box-shadow: -1px 2px 20px 0px rgba(102,102,102,0.2);
+  border: 0;
+  color: #FFF;
+  border-radius: 10px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+textarea{
+  min-height: 150px;
+  padding: 2rem;
+}
+
+input[type="checkbox"]{
+  width: auto;
+  box-shadow: none;
+  margin: 0 auto;
+  display: block;
+}
+
+input[type="submit"]{
+  margin-top: 2.4rem;
+}
+
+input[type="file"]{
+  background: none;
+  box-shadow: none;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+} 
+
+input:disabled{
+  cursor: not-allowed;
+  background: #0000009c;
+  color: #FFF;
+  }
+
+button:hover,
+input[type="submit"]:hover{
+  opacity: 1;
+}
+
+.cancel-btn{
+  background-color: #ccc;
+}
+
+.hide{
+  display: none;
+} 
+
+.content-grid p{
+  color: #333;
+  font-size: 12px;
+  margin-block: 0.6rem;
+}
+
+h2{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FF6600;
+  font-weight: normal;
+}
+
+h5{
+  font-size: 1.2rem;
+  color: #333;
+  margin: 3rem 0;
+}
+
+.subtitle{
+  color: #333;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  font-size: 12px;
+}
+
+.content-grid .group{
+  display: flex;
+  gap: 10px;  
+}
+
+.group-line{
+  display: flex;
+  margin-block: 1rem;
+}
+
+.group-line .torre{
+  width: 22%;
+  margin-right: 0.8rem;
+}
+
+.formWidthFull{
+  width: 100%;
+  max-width: 600px;
+  margin: 4rem auto;
+}
+
+.width-full{
+  width: 95%;
+  margin: 4rem auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}   
+
+
+.container-flex span {
+  flex: 1 1 calc(25% - 20px);
+  color: #333;    
+  padding: 20px;
+  text-align: left;
+}
+
+.container-flex span.center{
+  text-align: center;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container-flex .rows{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container-flex span.center > div{
+  display: flex;
+  gap: 15px;
+}
+
+/* Modal */
+.modal {
+  position: fixed; /* Fixa o modal na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+}
+
+.modal-content {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  width: 300px; /* Largura do modal */
+  max-width: 90%; /* Responsividade para telas menores */
+  position: relative; /* Para posicionamento do botão de fechar */
+}
+
+/* Botões dentro do modal */
+.modal-content button {
+  margin: 10px 5px; /* Margens ao redor dos botões */
+  padding: 8px 12px; /* Espaçamento interno dos botões */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+}
+
+.modal-content button:first-child {
+  background-color: #4caf50; /* Cor verde para o botão de atualizar */
+  color: white; /* Texto branco */
+}
+
+.modal-content button:last-child {
+  background-color: #f44336; /* Cor vermelha para o botão de cancelar */
+  color: white; /* Texto branco */
+}
+
+/* Título do modal */
+.modal-content h3 {
+  margin-top: 0; /* Remove margem superior */
+  margin-bottom: 15px; /* Margem inferior */
+  font-size: 1.2rem; /* Tamanho do texto */
+}
+
+/* Estilo do select */
+.modal-content select {
+  width: 100%; /* Ocupa 100% da largura */
+  padding: 8px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Margem inferior */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Efeito ao abrir e fechar o modal */
+.modal-content {
+  animation: fadeIn 0.3s ease-out; /* Animação suave de entrada */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+    transform: scale(0.9); /* Com um pouco de escala */
+  }
+  to {
+    opacity: 1; /* Fica visível */
+    transform: scale(1); /* Escala original */
+  }
+}

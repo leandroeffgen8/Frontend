@@ -1,0 +1,58 @@
+.content-grid .listMaintenance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.content-grid .listMaintenance:last-child{
+    border: 0;
+}
+
+.content-grid .listApto:first-of-type{
+    margin-top: 2rem;
+}
+
+.content-grid .listApto{
+    margin-block: 2rem;
+    background: #FFF;
+    border: 1px solid #eaeaea;
+}
+
+.content-grid .listApto h3{
+    padding: 0.8rem 1rem;
+    background: rgba(0, 0, 0, .05);
+    border-bottom: 1px solid #eaeaea;
+}
+
+.content-grid .listMaintenance p{
+    font-size: 1rem;
+    margin-block: 0.3rem;
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.information div{
+    display: flex;
+    align-items: center;
+}
+
+.container_btns{
+    margin-left: 5rem;
+    display: flex;
+    gap: 20px;
+}
+
+.container_btns span{ 
+    cursor: pointer;
+}
+
+.bulltets div{
+    margin-right: 1rem;
+}

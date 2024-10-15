@@ -1,0 +1,16 @@
+.share ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.share ul li a{
+    cursor: pointer;
+    color: #FFF;
+    transition: .3s;
+}
+
+.share ul li a:hover{
+    opacity: 0.5;
+}

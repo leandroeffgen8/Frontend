@@ -1,0 +1,30 @@
+
+.my-events{
+    margin-top: 2rem;
+}
+
+/* Container para as divs */
+.my-events .container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre as divs */
+}
+
+/* Estilo das divs */
+.my-events .container-flex span {
+    flex: 1 1 calc(15% - 20px); /* 25% da largura menos a metade do gap */
+    color: #333;    
+    padding: 20px;
+    text-align: left;
+}
+
+.btn-delete{
+    font-size: 1.3rem;
+    color: #FF6600;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+.btn-delete:hover{
+    color: #333;
+}
