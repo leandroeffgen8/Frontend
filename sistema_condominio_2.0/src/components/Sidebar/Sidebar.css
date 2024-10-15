@@ -1,0 +1,144 @@
+.sidebar{
+    position: relative;
+    width: 20%;
+    z-index: 9999;
+}
+
+.sidebar::before,
+.sidebar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sidebar::before{
+    background: url('../../assets/img-background.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.sidebar::after{
+    background: rgba(255, 102, 0, 0.5);
+}
+
+.sidebar .userImg{
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.sidebar .userImg img{
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+}
+
+.sidebar .image-sem-foto{
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.2);    
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .image-sem-foto h3{
+    font-weight: normal;
+    color: #FFF;
+    font-size: 0.75rem;
+}
+
+.sidebar .dados{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.sidebar .dados span{
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+.sidebar .dados a{
+    font-size: 0.75rem;
+    color: #FFF;
+}
+
+.sidebar .dados a:hover{
+    text-decoration: underline;
+}
+
+.sidebar .barra-title{
+    background: rgba(255, 102, 0, 0.6);
+    display: block;
+    font-size: 14px;
+    padding: 1.2rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.sidebar .list-itens{
+    padding: 1.2rem;
+}
+
+.sidebar .list-itens li{
+    margin-block: 0.8rem;
+    cursor: pointer;
+}
+
+.sidebar .list-itens li,
+.sidebar .list-itens li a{
+    color: #FFF;
+}
+
+.sidebar .list-itens li i{
+    float: left;
+    width: 30px;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.closed {
+    transform: translateX(-100%);
+}
+
+.menu-icon {
+    position: fixed;
+    top: 42px;
+    left: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none; 
+    }
+
+    .sidebar {
+        transform: translateX(0); 
+    }
+}
+
+
+@media(max-width:768px){
+    .container-main .sidebar{
+        position: absolute;
+        transition: transform 0.3s ease; 
+    }
+
+    .container-main .sidebar{
+        width: 90%;
+    }
+
+    .container-main .content{
+        width: 100%;
+    }
+ 
+}
