@@ -1,0 +1,93 @@
+.formCar{
+   display: block;
+}
+
+.profile-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    display: block;
+}
+
+.arquivo input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    height: 46px;
+}
+  
+.custom-file-label{
+    cursor: pointer;
+    background-color: #FFF;
+    box-shadow: -1px 2px 20px 0px rgba(102, 102, 102, 0.2);
+    color: #333;
+    display: block;
+    padding-inline: 0.6rem;
+    border-radius: 5px;
+    height: 46px;
+    line-height: 3.4;
+    font-size: 14px;
+}
+
+.arquivo{
+    position: relative;
+}
+
+.tower{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.tower span{
+    background-color: #FFF;
+    box-shadow: -1px 2px 20px 0px rgba(102, 102, 102, 0.2);
+    color: #9e9d9d;
+    border-radius: 5px;
+    padding: 0.85rem 1rem;
+}
+
+.tower input{
+    width: 50px;
+    text-align: center;
+}
+
+.infoCar{
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    font-size: 1.5rem;
+    background: #666;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.infoCar .items{
+    display: flex;
+    flex-direction: column;
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    background: rgba(255, 102, 0, 1);
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
