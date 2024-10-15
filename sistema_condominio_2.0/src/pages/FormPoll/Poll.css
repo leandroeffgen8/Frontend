@@ -1,0 +1,18 @@
+.enquete .group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+
+.enquete .group > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.enquete .group > div .btn-excluir {
+    width: 100px;
+    text-align: center;
+}
