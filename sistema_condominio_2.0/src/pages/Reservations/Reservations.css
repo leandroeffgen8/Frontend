@@ -1,0 +1,10 @@
+.grid-box .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.grid-box .past-event{
+    opacity: 0.5;
+}
