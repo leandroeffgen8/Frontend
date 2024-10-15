@@ -1,0 +1,19 @@
+.box-title{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, .05);
+}
+
+.box-title h3{
+    background: transparent !important;
+}
+
+.box-title span{
+    padding: 0.8rem 1rem;
+    display: flex;
+}
+
+.box-title span svg{
+    margin: 0 0.3rem;
+    cursor: pointer;
+}
